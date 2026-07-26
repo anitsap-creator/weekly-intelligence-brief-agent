@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Reliability Diagnostic | ClawForge</title>
+  <meta name="description" content="A fixed-scope diagnostic for tool-using AI agents with loops, duplicate actions, recovery ambiguity, or missing spend limits." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <a class="back" href="../">← All ClawForge offers</a>
+      <p class="eyebrow">Agent Reliability Diagnostic</p>
+      <h1>Find the failure path before your agent repeats it in production.</h1>
+      <p class="subhead">A fixed-scope review for tool-using AI agents that loop, duplicate side effects, recover ambiguously, or lack a provable terminal state.</p>
+      <div class="cta-row">
+        <a class="button primary" href="mailto:anit.sap@gmail.com?subject=Agent%20Reliability%20Diagnostic%20-%20website&body=System%20or%20framework%3A%0AObserved%20failure%3A%0ASanitized%20trace%20available%3A%20yes%2Fno%0ASource%3A%20website-agent-reliability">Request the diagnostic</a>
+        <a class="button secondary" href="#sample">See a sample finding</a>
+      </div>
+      <p class="note">USD 250 narrow triage · USD 500 standard diagnostic · no credentials required for initial review.</p>
+    </section>
+
+    <section class="grid three">
+      <div class="card"><h3>Containment</h3><p>Check turn, tool-call, time, and spend caps plus the terminal edge they trigger.</p></div>
+      <div class="card"><h3>Side effects</h3><p>Test reservation, idempotency, readback, crash recovery, and duplicate-action prevention.</p></div>
+      <div class="card"><h3>Acceptance</h3><p>Turn the observed failure into a reproducible test and an explicit pass/fail boundary.</p></div>
+    </section>
+
+    <section>
+      <h2>Choose the smallest useful scope</h2>
+      <div class="grid two">
+        <div><p class="metric">$250</p><h3>Narrow triage</h3><p>One sanitized failure trace, one failure-chain assessment, and one prioritized acceptance-test recommendation.</p></div>
+        <div><p class="metric">$500</p><h3>Standard diagnostic</h3><p>Terminal states, duplicate actions, retry/recovery, spend limits, evidence trail, and a prioritized repair plan.</p></div>
+      </div>
+      <p class="small">The $250 fee is credited if the evidence justifies moving immediately into the standard diagnostic. Scope and payment are agreed before work begins.</p>
+    </section>
+
+    <section id="sample" class="proof">
+      <h2>Sample finding</h2>
+      <div class="sample">
+        <strong>Failure:</strong> a tool-call limit stops the loop but does not prove why retry is safe.<br />
+        <strong>Risk:</strong> the workflow can resume after a side effect without knowing whether the prior action completed.<br />
+        <strong>Acceptance test:</strong> crash after reservation, resume from checkpoint, and assert exactly one external action plus a terminal receipt.<br />
+        <strong>Decision:</strong> block production promotion until reservation, idempotency, and readback pass together.
+      </div>
+      <p class="small">Illustrative format, not a client result. No revenue or reliability outcome is claimed.</p>
+    </section>
+
+    <section>
+      <h2>What you receive</h2>
+      <ul class="checklist">
+        <li>Failure-chain map with observed and inferred claims separated</li>
+        <li>Severity-ranked findings and evidence gaps</li>
+        <li>Acceptance tests for terminal state, recovery, and duplicate prevention</li>
+        <li>Repair / investigate / stop recommendation</li>
+        <li>Concise handoff suitable for the engineering owner</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Have a sanitized trace?</h2>
+      <p>Send the framework, observed failure, and whether a sanitized trace is available. Do not send credentials, secrets, or private customer data.</p>
+      <a class="button primary" href="mailto:anit.sap@gmail.com?subject=Agent%20Reliability%20Diagnostic%20-%20website&body=System%20or%20framework%3A%0AObserved%20failure%3A%0ASanitized%20trace%20available%3A%20yes%2Fno%0ASource%3A%20website-agent-reliability">Email the intake</a>
+    </section>
+  </main>
+</body>
+</html>
