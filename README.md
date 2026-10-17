@@ -39,7 +39,7 @@ For SEO, content, and SaaS-growth agencies that need recurring evidence about co
 ## How it works
 
 1. Choose the offer matching the operational problem.
-2. Use the intake link on that page to share a short, non-sensitive description.
+2. Share a short, non-sensitive description when contact is available.
 3. Scope and fit are confirmed before payment or access is requested.
 4. Delivery stays within the fixed scope unless both sides explicitly agree otherwise.
 
@@ -51,12 +51,7 @@ The initial review does not require credentials, production access, private cust
 
 ## Contact
 
-Email [anit.sap@gmail.com](mailto:anit.sap@gmail.com?subject=ClawForge%20diagnostic%20inquiry%20-%20GitHub) with:
-
-- the offer you are considering;
-- the system or business type;
-- the observed problem;
-- and whether a sanitized example is available.
+Contact: coming soon
 
 ## Repository
 
